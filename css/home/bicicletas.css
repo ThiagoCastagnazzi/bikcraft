@@ -1,0 +1,48 @@
+.bicicletas-texto {
+  font: 600 4rem/1.125 "Poppins", sans-serif;
+  margin-bottom: 20px;
+}
+
+.bicicletas-lista {
+  display: flex;
+  gap: 20px;
+  max-width: 1400px;
+  padding-left: 20px;
+  padding-right: 20px;
+  overflow-x: auto;
+  margin: 0 auto;
+}
+
+.bicicleta-imagem {
+  object-fit: cover;
+  height: auto;
+  display: block;
+  max-width: 100%;
+  min-width: 280px;
+}
+
+.bicicletas-lista-nome {
+  font: 600 2rem/1.25 "Poppins", sans-serif;
+  margin-top: 10px;
+}
+
+.bicicletas-lista-preco {
+  font: 500 1.125rem/1.35 "Roboto", sans-serif;
+  margin-top: 10px;
+  color: var(--cor-8);
+}
+
+/* -----------------medias---------------- */
+
+@media (max-width: 800px) {
+  .bicicletas-texto {
+    font: 600 3rem/1.125 "Poppins", sans-serif;
+  }
+  .bicicletas-lista-nome {
+    font: 600 1rem/1.125 "Poppins", sans-serif;
+  }
+
+  .bicicletas-lista-preco {
+    font: 600 0.8rem/1.125 "Poppins", sans-serif;
+  }
+}

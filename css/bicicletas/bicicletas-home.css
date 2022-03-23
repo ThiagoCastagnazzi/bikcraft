@@ -1,0 +1,122 @@
+.escolha {
+  background-color: var(--cor-11);
+  padding: 60px 20px;
+}
+
+.escolha-h3 {
+  color: var(--cor-5);
+}
+
+.escolha-h2 {
+  color: var(--cor-0);
+}
+
+.bicicletas-bicicletas {
+  gap: 40px;
+  padding: 60px;
+}
+
+.bicicletas-container:nth-child(even) {
+  background-image: linear-gradient(to left, var(--cor-11) 75%, var(--cor-0) 0);
+  color: white;
+}
+
+.bicicletas-nimbus {
+  position: relative;
+}
+
+.bicicletas-bicicletas-valor {
+  position: absolute;
+  background: var(--cor-11);
+  top: 20px;
+  right: 0px;
+  color: white;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.bicicletas-bicicletas-h3::before {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 10px;
+  background: var(--cor-p1);
+}
+
+.bicicletas-bicicletas-descricao {
+  color: var(--cor-8);
+}
+
+.bicicletas-bicicletas-nimbus-descricao {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  margin-top: 20px;
+}
+
+.bicicletas-bicicletas-nimbus-descricao li {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  align-items: center;
+  font: 400 0.875rem/1.35 'Poppins', sans-serif;
+  color: var(--cor-8);
+}
+
+.bicicletas-bicicletas-botao {
+  color: var(--cor-p5);
+  display: inline-block;
+  background: linear-gradient(#ffbf00, #f2a50c);
+  font: 600 1.125rem/1.35 'Poppins', sans-serif;
+  align-self: end;
+  padding: 16px 32px;
+  border-radius: 4px;
+  cursor: pointer;
+  position: relative;
+}
+
+.bicicletas-bicicletas-botao:hover {
+  background: linear-gradient(#ffb60d, #e59317);
+}
+
+.bicicletas-bicicletas-botao::after {
+  content: '';
+  background: url(./img/icones/seta.svg);
+  display: inline-block;
+  margin-left: 10px;
+  width: 18px;
+  height: 10px;
+  transition: transform 0.2s;
+}
+
+.bicicletas-bicicletas-botao:hover::after {
+  transform: translateX(4px);
+}
+
+.bicicletas-bicicletas-nimbus-descricao img {
+  width: 24px;
+}
+
+@media (max-width: 1200px) {
+  .font-h3 {
+    font: 400 1.5rem/1.5 'Roboto', sans-serif;
+  }
+
+  .font-h2 {
+    font: 600 3rem/1.125 'Poppins', sans-serif;
+  }
+}
+
+@media (max-width: 800px) {
+  .bicicletas-container:nth-child(even) {
+    background-image: linear-gradient(
+      to left,
+      var(--cor-11) 100%,
+      var(--cor-0) 0
+    );
+    color: white;
+  }
+
+  .bicicletas-bicicletas {
+    padding: 20px;
+  }
+}

@@ -1,0 +1,15 @@
+.font-h3 {
+  font: 400 1.5rem/1.5 "Roboto", sans-serif;
+}
+
+.font-h2 {
+  font: 600 4rem/1.125 "Poppins", sans-serif;
+}
+
+.font-titulo-texto {
+  font: 600 2rem/1.25 "Poppins", sans-serif;
+}
+
+.font-texto-descricao {
+  font: 400 1rem/1.5 "Roboto", sans-serif;
+}

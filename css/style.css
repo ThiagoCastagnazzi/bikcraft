@@ -1,0 +1,12 @@
+@import url(./utilitarios/global.css);
+@import url(./utilitarios/cores.css);
+@import url(./utilitarios/font.css);
+@import url(./home/introducao.css);
+@import url(./home/bicicletas.css);
+@import url(./home/modelo.css);
+@import url(./home/parceiros.css);
+@import url(./home/citacao.css);
+@import url(./home/planos.css);
+@import url(./home/contato.css);
+@import url(./bicicletas/bicicletas-home.css);
+@import url(./contato/contatos.css);

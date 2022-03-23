@@ -1,0 +1,126 @@
+.seguros {
+  background: var(--cor-11);
+  padding-bottom: 50px;
+}
+
+.seguros-subtitulo {
+  margin-top: 50px;
+  font: 600 4rem/1.125 "Poppins", sans-serif;
+  margin-bottom: 20px;
+  color: var(--cor-0);
+  padding: 0 20px;
+}
+
+.planos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  padding: 0 20px;
+}
+
+.planos li {
+  padding: 20px 20px 20px 40px;
+  color: white;
+  background: var(--cor-12);
+  position: relative;
+  border-radius: 4px;
+}
+
+.prata-titulo {
+  font: 600 2rem/1.25 "Poppins", sans-serif;
+  color: var(--cor-6);
+  margin-bottom: 40px;
+}
+
+.prata-valor {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  color: var(--cor-0);
+  font: 600 2rem/1.25 "Poppins", sans-serif;
+}
+
+.mensal {
+  position: absolute;
+  right: 20px;
+  top: 60px;
+  color: var(--cor-6);
+  font: 600 0.875rem/1.25 "Poppins", sans-serif;
+}
+
+.planos-vantagens {
+  color: var(--cor-0);
+  font: 500 1.125rem/1.35 "Roboto", sans-serif;
+  margin-top: 10px;
+}
+
+.planos-vantagens::before {
+  content: "";
+  position: absolute;
+  left: 20px;
+  background: url(/img/icones/lista.svg) no-repeat;
+  width: 20px;
+  height: 10px;
+  margin-top: 6px;
+}
+
+.prata-botao {
+  display: inline-block;
+  padding: 16px 32px;
+  background: var(--cor-10);
+  color: var(--cor-2);
+  font: 600 1.125rem/1.35 "Poppins", sans-serif;
+  margin-top: 20px;
+  border-radius: 4px;
+  align-self: flex-end;
+}
+
+.ouro-titulo {
+  font: 600 2rem/1.25 "Poppins", sans-serif;
+  color: var(--cor-p1);
+  margin-bottom: 40px;
+}
+
+.ouro-valor {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  color: var(--cor-0);
+  font: 600 2rem/1.25 "Poppins", sans-serif;
+}
+
+.ouro-vantagens {
+  color: var(--cor-0);
+  font: 500 1.125rem/1.35 "Roboto", sans-serif;
+  margin-top: 10px;
+}
+
+.ouro-botao {
+  display: inline-block;
+  padding: 16px 32px;
+  background: var(--cor-p1);
+  color: var(--cor-10);
+  font: 600 1.125rem/1.35 "Poppins", sans-serif;
+  margin-top: 20px;
+  border-radius: 4px;
+}
+
+@media (max-width: 800px) {
+  .planos {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+    margin: 0;
+  }
+
+  .seguros-subtitulo {
+    font: 600 3rem/1.125 "Poppins", sans-serif;
+  }
+
+  .contato-main img {
+    display: none;
+  }
+
+  .contato-main {
+    justify-items: center;
+  }
+}
